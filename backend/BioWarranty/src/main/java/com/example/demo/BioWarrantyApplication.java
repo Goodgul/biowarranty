@@ -8,7 +8,7 @@ public class BioWarrantyApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BioWarrantyApplication.class, args);
-		//encore un nouveau test dallel
+		//un test pour voir si tous se passe bien coté back !
 	}
 
 }
