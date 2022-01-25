@@ -26,8 +26,10 @@ public class Categorie {
 	private String photoCategorie;
 	/*
 	 * @OneToMany(mappedBy="categorie")
-	 *//*	private List<Produit> produits;
-*/	
+	 *//*	private List<Produit> produits;*/
+	
+	
+	
 	
 
 }
