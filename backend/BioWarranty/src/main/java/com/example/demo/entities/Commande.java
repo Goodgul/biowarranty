@@ -31,13 +31,17 @@ public class Commande{
 	private double totalCommande;
 	private int quantiteCommande;
 
+
+
+	@ManyToOne 
+	private Client client;
+	@ManyToMany (mappedBy="commandes") 
+	private List<Produit> produits;
+
 	
-	  @ManyToOne private Client client;
+	 
 	
 	
-	
-	  @ManyToMany
-	  private List<Produit> produits;
 	 
 	
 	

@@ -31,13 +31,13 @@ public class Produit {
 	private String photoProduit;
 	private boolean disponible;
 	private int quantiteProduit;
-	
-	
+		
 	@ManyToOne
 	private Categorie categorie;
 	
-	
-	@ManyToMany (mappedBy= "produits")
+	@ManyToMany 
 	private List<Commande> commandes;
+
+
 
 }
