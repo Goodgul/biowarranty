@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
@@ -30,13 +31,11 @@ public class Commande {
 	private double totalCommande;
 	private int quantiteCommande;
 
-	/*
-	 * @ManyToOne private Client client;
-	 */
-	
-	/*
-	 * @ManyToMany (mappedy="commandes") private List<Produit> produits
-	 */
+	@ManyToOne 
+	private Client client;
+	@ManyToMany (mappedBy="commandes") 
+	private List<Produit> produits;
+	 
 	
 	
 	
