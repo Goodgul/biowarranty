@@ -8,15 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.dao.ClientRepository;
 import com.example.demo.entities.Client;
-import com.example.demo.entities.Commande;
 
-import net.bytebuddy.utility.RandomString;
 
 
 @RestController
@@ -24,6 +19,7 @@ public class ClientController {
 	
 	@Autowired
 	private ClientRepository cRepo;
+
 	//@Autowired
 	//private CommandeRepository commandeRepo;
 	
@@ -53,4 +49,5 @@ public class ClientController {
 	//  public List<Commande> getCommande(@PathVariable Long idClient){ 
 		//  return commandeRepo.findByClientId(idClient).orElse(null); }
  
+
 }

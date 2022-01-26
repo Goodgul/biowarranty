@@ -38,10 +38,13 @@ public class Client{
 	@Column(length=1000)
 	private String telephoneClient;
 	
+
 	 @OneToMany(mappedBy = "client") 
 	 private List<Commande> commandes;
 	 
 
+
+	  
 	
 	
 
