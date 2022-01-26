@@ -24,9 +24,9 @@ public class Categorie {
 	private Long categorieId ;
 	private String nomCategorie;
 	private String photoCategorie;
-	/*
-	 * @OneToMany(mappedBy="categorie")
-	 *//*	private List<Produit> produits;*/
+	
+	@OneToMany(mappedBy="categorie")
+	 private List<Produit> produits;
 	
 	
 	
