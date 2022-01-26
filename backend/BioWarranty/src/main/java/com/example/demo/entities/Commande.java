@@ -23,13 +23,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 
-public class Commande {
+public class Commande{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long commandeId;
-	private Date dateCommande;
+	private String dateCommande;
 	private double totalCommande;
 	private int quantiteCommande;
+
 
 
 	@ManyToOne 

@@ -14,6 +14,7 @@ import com.example.demo.entities.Client;
 
 @RestController
 public class ClientController {
+
 	
 	@Autowired
 	private ClientRepository cRepo;

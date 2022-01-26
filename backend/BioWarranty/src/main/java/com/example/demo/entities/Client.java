@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -19,8 +20,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor   //constructeur sans arguments
-@AllArgsConstructor  //constructeur avec arguments
+@NoArgsConstructor  
+@AllArgsConstructor  
 @Entity
 public class Client{
 	
@@ -38,10 +39,11 @@ public class Client{
 	@Column(length=1000)
 	private String telephoneClient;
 	
-
 	 @OneToMany(mappedBy = "client") 
 	 private List<Commande> commandes;
 	 
+	
+
 
 
 	  

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.dao.ProduitRepository;
-import com.example.demo.dao.RepositoryCategorie;
+import com.example.demo.dao.CategorieRepository;
 import com.example.demo.entities.Categorie;
 import com.example.demo.entities.Produit;
 
@@ -23,7 +23,7 @@ public class ControllerProduit {
 	@Autowired
 	private  ProduitRepository pRepo;
 	@Autowired
-	private  RepositoryCategorie rcategorie;
+	private  CategorieRepository rcategorie;
 	
 	
 	
