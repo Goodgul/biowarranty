@@ -9,6 +9,8 @@ import com.example.demo.entities.Commande;
 @CrossOrigin("*")
 
 @RestController
-public interface RepositoryCommande extends JpaRepository<Commande, Long> {
+public interface CommandeRepository extends JpaRepository<Commande, Long> {
 
+	
+	
 }

@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
@@ -22,21 +23,22 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 
-public class Commande {
+public class Commande{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long commandeId;
-	private Date dateCommande;
+	private String dateCommande;
 	private double totalCommande;
 	private int quantiteCommande;
 
-	/*
-	 * @ManyToOne private Client client;
-	 */
 	
-	/*
-	 * @ManyToMany (mappedy="commandes") private List<Produit> produits
-	 */
+	  @ManyToOne private Client client;
+	
+	
+	
+	  @ManyToMany
+	  private List<Produit> produits;
+	 
 	
 	
 	

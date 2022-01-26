@@ -1,7 +1,9 @@
 package com.example.demo.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,8 +20,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor   //constructeur sans arguments
-@AllArgsConstructor  //constructeur avec arguments
+@NoArgsConstructor  
+@AllArgsConstructor  
 @Entity
 public class Client{
 	
@@ -36,9 +38,11 @@ public class Client{
 	private String mailClient;
 	@Column(length=1000)
 	private String telephoneClient;
-	/*
-	 * @OneToMany(mappedBy = "client") private List<Commande> commandes;
-	 */
+	
+	 @OneToMany(mappedBy = "client") 
+	 private List<Commande> commandes;
+	 
+	
 
 	
 	
