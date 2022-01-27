@@ -42,6 +42,9 @@ public class Client{
 	 @OneToMany(mappedBy = "client") 
 	 private List<Commande> commandes;
 	 
+	 @OneToMany(mappedBy = "client")
+	 private List<Commentaire> commentaires;
+	 
 	
 
 

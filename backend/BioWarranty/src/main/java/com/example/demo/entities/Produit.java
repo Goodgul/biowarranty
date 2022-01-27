@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,10 +35,12 @@ public class Produit {
 		
 	@ManyToOne
 	private Categorie categorie;
-	
 	@ManyToMany 
 	private List<Commande> commandes;
-
+	@OneToMany(mappedBy = "produit")
+	private List<Commentaire> commentaires;
+    
+	
 
 
 }
