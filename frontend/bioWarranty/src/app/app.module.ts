@@ -7,6 +7,10 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { ProduitsComponent } from './components/produits/produits.component';
 import { AuthentificationComponent } from './components/authentification/authentification.component';
 import { PanierComponent } from './components/panier/panier.component';
+import { PageDemarrageComponent } from './components/page-demarrage/page-demarrage.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NousConnaitreComponent } from './components/nous-connaitre/nous-connaitre.component';
+import { ContacteComponent } from './components/contacte/contacte.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { PanierComponent } from './components/panier/panier.component';
     AccueilComponent,
     ProduitsComponent,
     AuthentificationComponent,
-    PanierComponent
+    PanierComponent,
+    PageDemarrageComponent,
+    FooterComponent,
+    NousConnaitreComponent,
+    ContacteComponent
   ],
   imports: [
     BrowserModule,
